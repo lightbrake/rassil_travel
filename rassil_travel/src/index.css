@@ -29,6 +29,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 h1 {
   font-size: 3.2em;
@@ -53,6 +58,11 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @media (prefers-color-scheme: light) {
   :root {
